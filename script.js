@@ -77,19 +77,15 @@ document.getElementById("equals").addEventListener("click", () => {
 
       if (simbols.length >= 2 && VariableOperationFixed[i+1]>=0) {
         if(simbols.charAt(simbols.length-1)!== '-'){
-          console.log('Flag 1')
           simbols = simbols.slice(-1)
           generalOperation+= simbols;
         }else if(simbols.charAt(simbols.length-1)== '-' && generalOperation.length > 4){
-          console.log('Flag 2')
           simbols = simbols.slice(-1)
           generalOperation+= simbols; 
         }else {
           generalOperation+= simbols; 
         }
-        
       }else if(simbols.length == 1 && VariableOperationFixed[i+1]>=0){ //PARA X*Y
-        console.log('Flag 3')
         generalOperation+= simbols;
       }
     }
@@ -109,8 +105,3 @@ document.getElementById("clear").addEventListener("click", () => {
   string = " ";
   display.value = "0";
 });
-//////////////////
-
-
-
-//Operations to fixed if 2 or more operators were entered consecutively

@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    user-select: none;
 }
 body {
     margin: 0;
@@ -21,7 +22,8 @@ button {
 }
 button:hover {
     cursor: pointer;
-    opacity: 0.7;
+    /* opacity: 0.7; */
+    background-color: rgb(255, 186, 11);
 }
 button:active {
     width: 60px;
